@@ -13,7 +13,7 @@ class TributaryUnit(models.Model):
     gaceta = fields.Char(string='Nro. Gaceta', store= True)
     gaceta_fecha = fields.Date(string='Fecha de la Gaceta', store= True)
     
-    @api.onchange('unit', 'factor')
+    @api.onchange('unit')
     def _compute_minimum(self):
         for record in self:
             configs = self.env['res.config.settings']
