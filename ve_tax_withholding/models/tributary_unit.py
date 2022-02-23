@@ -8,7 +8,6 @@ class TributaryUnit(models.Model):
     _description = 'model for tributary  unit'
     
     unit = fields.Float(string='Valor de la Unidad Tributaria', required = True, store= True)
-    factor = fields.Float(string='Factor Fiscal', required = True, store= True)
     minimum = fields.Float(string='Minimo', default= lambda self: self._compute_minimum() , store= True)
     
     gaceta = fields.Char(string='Nro. Gaceta', store= True)
@@ -17,4 +16,5 @@ class TributaryUnit(models.Model):
     @api.onchange('unit', 'factor')
     def _compute_minimum(self):
         for record in self:
-            record.minimum = record.unit * record.factor
+            configs = self.env['res.config.settings']
+            record.minimum = record.unit * (configs.factor)
