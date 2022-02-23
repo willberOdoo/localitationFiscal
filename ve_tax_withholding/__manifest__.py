@@ -41,6 +41,7 @@
         "views/tax_withholding_menuitems.xml",
         "views/account_move_inherit_view.xml",
         "views/res_partner_inherit.xml",
+        "views/res_company.xml",
         "views/factor_islr_views.xml",
         "views/tributary_unit.xml",
     ],
