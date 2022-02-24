@@ -18,5 +18,5 @@ class TributaryUnit(models.Model):
         for record in self:
             #configs = self.env['res.config.settings']
             configs = self.env['res.company']
-            record.minimum = configs
+            record.minimum = configs.factor
             
