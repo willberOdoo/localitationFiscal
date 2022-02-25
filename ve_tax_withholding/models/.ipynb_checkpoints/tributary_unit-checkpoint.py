@@ -5,7 +5,7 @@ from odoo import models, fields, api
 
 class TributaryUnit(models.Model):
     _name = 'tax.tributary_unit'
-    _description = 'model for tributary  unit'
+    _description = 'model for computing fiscal minimum from tributary unit and fiscal factor gotten from res.company model'
     
     unit = fields.Float(string='Valor de la Unidad Tributaria', required = True, store= True)
     minimum = fields.Float(string='Minimo', default= lambda self: self._compute_minimum() , store= True)
@@ -17,7 +17,4 @@ class TributaryUnit(models.Model):
     @api.onchange('unit')
     def _compute_minimum(self):
         for record in self:
-            #configs = self.env['res.config.settings']
-            configs = self.env['res.company'].search([('id','=',record.company_id.id)])
-            record.minimum = record.unit * configs.factor
-            
+            record.minimum = record.unit * record.company_id.factor
