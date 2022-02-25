@@ -8,7 +8,7 @@ class TributaryUnit(models.Model):
     _description = 'model for tributary  unit'
     
     unit = fields.Float(string='Valor de la Unidad Tributaria', required = True, store= True)
-    minimum = fields.Text(string='Minimo', default= lambda self: self._compute_minimum() , store= True)
+    minimum = fields.Float(string='Minimo', default= lambda self: self._compute_minimum() , store= True)
     company_id = fields.Many2one(comodel_name='res.company', string='Company',  required=True, default=lambda self: self.env['res.company']._company_default_get('account.invoice'))
     
     gaceta = fields.Char(string='Nro. Gaceta', store= True)
@@ -19,5 +19,5 @@ class TributaryUnit(models.Model):
         for record in self:
             #configs = self.env['res.config.settings']
             configs = self.env['res.company'].search([('id','=',record.company_id.id)])
-            record.minimum = configs.factor
+            record.minimum = record.unit * configs.factor
             
