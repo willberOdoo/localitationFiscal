@@ -133,7 +133,7 @@
             <field name="amount">75</field>
             <field name="amount_type">percent</field>
             <field name="type_tax_use">purchase</field>
-            <field name="tax_group_ret_iva" ref="tax_group_iva"/>
+            <field name="tax_group_id" ref="tax_group_ret_iva"/>
             <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
                 (0,0, {
                     'factor_percent': 100,
@@ -164,7 +164,7 @@
             <field name="amount">75</field>
             <field name="amount_type">percent</field>
             <field name="type_tax_use">sale</field>
-            <field name="tax_group_ret_iva" ref="tax_group_iva"/>
+            <field name="tax_group_id" ref="tax_group_ret_iva"/>
             <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
                 (0,0, {
                     'factor_percent': 100,
@@ -197,7 +197,7 @@
             <field name="amount">100</field>
             <field name="amount_type">percent</field>
             <field name="type_tax_use">purchase</field>
-            <field name="tax_group_ret_iva" ref="tax_group_iva"/>
+            <field name="tax_group_id" ref="tax_group_ret_iva"/>
             <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
                 (0,0, {
                     'factor_percent': 100,
@@ -228,7 +228,7 @@
             <field name="amount">100</field>
             <field name="amount_type">percent</field>
             <field name="type_tax_use">sale</field>
-            <field name="tax_group_ret_iva" ref="tax_group_iva"/>
+            <field name="tax_group_id" ref="tax_group_ret_iva"/>
             <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
                 (0,0, {
                     'factor_percent': 100,
