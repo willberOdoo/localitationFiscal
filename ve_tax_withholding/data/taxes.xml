@@ -126,7 +126,7 @@
         
         
             <!-- Retencion de IVA 75% -->
-           <record id="iva_purchases" model="account.tax.template">
+           <record id="retencion_sale" model="account.tax.template">
             <field name="chart_template_id" ref="ve_chart_template_amd"/>
             <field name="name">Retención IVA(Compras)</field>
             <field name="description">Retención IVA (Compras)</field>
@@ -157,7 +157,7 @@
         </record>
         
            <!-- Retencion de IVA 75% -->
-           <record id="iva_purchases" model="account.tax.template">
+           <record id="retencion_purchases" model="account.tax.template">
             <field name="chart_template_id" ref="ve_chart_template_amd"/>
             <field name="name">Retención IVA(Ventas)</field>
             <field name="description">Retención IVA (Ventas)</field>
@@ -190,7 +190,7 @@
         
         
         <!-- Retencion de IVA 100% -->
-           <record id="iva_purchases" model="account.tax.template">
+           <record id="iva_sale" model="account.tax.template">
             <field name="chart_template_id" ref="ve_chart_template_amd"/>
             <field name="name">Retención IVA(Compras)</field>
             <field name="description">Retención IVA (Compras)</field>
