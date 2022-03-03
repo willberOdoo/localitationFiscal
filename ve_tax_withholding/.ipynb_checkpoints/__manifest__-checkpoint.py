@@ -31,6 +31,7 @@
         "data/withholding_subjects_data.xml",
         "data/tax_groups.xml",
         "data/taxes.xml",
+        "data/company.xml",
         "report/tax_withholding_report.xml",
         "report/tax_withholding_customer_report.xml",
         "report/tax_book_excel_report.xml",
