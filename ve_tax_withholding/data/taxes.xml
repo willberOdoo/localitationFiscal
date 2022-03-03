@@ -130,7 +130,7 @@
             <field name="chart_template_id" ref="ve_chart_template_amd"/>
             <field name="name">Retención IVA(Compras)</field>
             <field name="description">Retención IVA (Compras)</field>
-            <field name="amount">75%</field>
+            <field name="amount">75</field>
             <field name="amount_type">percent</field>
             <field name="type_tax_use">purchase</field>
             <field name="tax_group_ret_iva" ref="tax_group_iva"/>
@@ -161,7 +161,7 @@
             <field name="chart_template_id" ref="ve_chart_template_amd"/>
             <field name="name">Retención IVA(Ventas)</field>
             <field name="description">Retención IVA (Ventas)</field>
-            <field name="amount">75%</field>
+            <field name="amount">75</field>
             <field name="amount_type">percent</field>
             <field name="type_tax_use">sale</field>
             <field name="tax_group_ret_iva" ref="tax_group_iva"/>
@@ -194,7 +194,7 @@
             <field name="chart_template_id" ref="ve_chart_template_amd"/>
             <field name="name">Retención IVA(Compras)</field>
             <field name="description">Retención IVA (Compras)</field>
-            <field name="amount">100%</field>
+            <field name="amount">100</field>
             <field name="amount_type">percent</field>
             <field name="type_tax_use">purchase</field>
             <field name="tax_group_ret_iva" ref="tax_group_iva"/>
@@ -225,7 +225,7 @@
             <field name="chart_template_id" ref="ve_chart_template_amd"/>
             <field name="name">Retención IVA(Ventas)</field>
             <field name="description">Retención IVA (Ventas)</field>
-            <field name="amount">100%</field>
+            <field name="amount">100</field>
             <field name="amount_type">percent</field>
             <field name="type_tax_use">sale</field>
             <field name="tax_group_ret_iva" ref="tax_group_iva"/>
