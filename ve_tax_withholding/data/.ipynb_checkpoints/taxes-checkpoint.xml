@@ -129,7 +129,7 @@
            <record id="retencion_sale" model="account.tax.template">
             <field name="chart_template_id" ref="ve_chart_template_amd"/>
             <field name="name">Retención IVA 75%(Compras)</field>
-            <field name="description">Retención IVA (Compras)</field>
+            <field name="description">Retención IVA 75% (Compras)</field>
             <field name="amount">75</field>
             <field name="amount_type">percent</field>
             <field name="type_tax_use">purchase</field>
@@ -160,7 +160,7 @@
            <record id="retencion_purchases" model="account.tax.template">
             <field name="chart_template_id" ref="ve_chart_template_amd"/>
             <field name="name">Retención IVA 75%(Ventas)</field>
-            <field name="description">Retención IVA (Ventas)</field>
+            <field name="description">Retención IVA 75% (Ventas)</field>
             <field name="amount">75</field>
             <field name="amount_type">percent</field>
             <field name="type_tax_use">sale</field>
@@ -193,7 +193,7 @@
            <record id="retencion_sale_100" model="account.tax.template">
             <field name="chart_template_id" ref="ve_chart_template_amd"/>
             <field name="name">Retención IVA 100%(Compras)</field>
-            <field name="description">Retención IVA (Compras)</field>
+            <field name="description">Retención IVA 100% (Compras)</field>
             <field name="amount">100</field>
             <field name="amount_type">percent</field>
             <field name="type_tax_use">purchase</field>
@@ -224,7 +224,7 @@
            <record id="retencion_purchases_100" model="account.tax.template">
             <field name="chart_template_id" ref="ve_chart_template_amd"/>
             <field name="name">Retención IVA 100%(Ventas)</field>
-            <field name="description">Retención IVA (Ventas)</field>
+            <field name="description">Retención IVA 100%(Ventas)</field>
             <field name="amount">100</field>
             <field name="amount_type">percent</field>
             <field name="type_tax_use">sale</field>
