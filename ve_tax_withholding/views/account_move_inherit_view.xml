@@ -10,6 +10,16 @@
                 <xpath expr="//div[@class='oe_button_box']" position="inside">
                     <button string="Retenciones" name="ve_tax_withholding.tax_withholding_voucher_vendor_form_action" type="action" class="oe_stat_button" icon="fa-dollar">
                     </button>
+                    <button name="action_schedule_meeting" type="object"
+                            class="oe_stat_button" icon="fa-calendar"
+                            context="{'partner_id': partner_id}"
+                            attrs="{'invisible': [('type', '=', 'lead')]}">
+                            <div class="o_stat_info">
+                                <field name="meeting_count" class="o_stat_value"/>
+                                <span class="o_stat_text" attrs="{'invisible': [('meeting_count', '&lt;', 2)]}"> Meetings</span>
+                                <span class="o_stat_text" attrs="{'invisible': [('meeting_count', '&gt;', 1)]}"> Meeting</span>
+                            </div>
+                    </button>
                 </xpath>
             </field>
         </record>
