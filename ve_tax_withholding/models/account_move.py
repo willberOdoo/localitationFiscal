@@ -4,5 +4,5 @@ class AccountMove( models.Model):
     _inherit = 'account.move'
     control_number = fields.Char(string='Numero de control', required=True, store=True, default='00') 
     
-     name = fields.Char( string = 'Concepto Retención ISLR', required = True)
+    name = fields.Char( string = 'Concepto Retención ISLR', required = True)
     
