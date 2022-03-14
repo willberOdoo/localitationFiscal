@@ -12,8 +12,11 @@
                     </button>
                 </xpath>
                 <xpath expr="//field[@name='journal_id']" position="after">
+                    <group>
                 <group> 
-                    <field name="subjects"/> </group>
+                    <field name="subjects"/> 
+                    </group>
+                        </group>
                 </xpath> 
             </field>
         </record>
