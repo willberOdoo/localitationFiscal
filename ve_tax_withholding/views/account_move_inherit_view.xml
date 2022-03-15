@@ -11,12 +11,10 @@
                     <button string="Retenciones" name="ve_tax_withholding.tax_withholding_voucher_vendor_form_action" type="action" class="oe_stat_button" icon="fa-dollar">
                     </button>
                 </xpath>
-                <xpath expr="//field[@name='journal_id']"position="before">
-                    <group name= "group_top">
-                <group> 
-                    <field name="subjects"/> 
+                <xpath expr="//div[@name='journal_div']"position="after">
+                    <group> 
+                        <field name="subjects"/> 
                     </group>
-                        </group>
                 </xpath> 
             </field>
         </record>
